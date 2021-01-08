@@ -11,5 +11,9 @@ class TestHelper(unittest.TestCase):
         result = helpers.aggregate(self.items)
         self.assertEqual(result, 70)
 
+    def test_existence(self):
+        result = helpers.check_existence(10, self.items)
+        self.assertTrue(result, True)
+
 
 unittest.main()
