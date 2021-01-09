@@ -22,5 +22,9 @@ class TestHelper(unittest.TestCase):
         result = helpers.isEqual(100, 89)
         self.assertFalse(result, False)
 
+    def test_user_email(self):
+        test_user = helpers.generate_user_email("naphtha", "newman", 27)
+        self.assertEqual(test_user, "naphthanewman_27@racoondevs.com")
+
 
 unittest.main()

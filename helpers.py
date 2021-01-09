@@ -18,4 +18,5 @@ def isEqual(a, b):
 
 
 def generate_user_email(firstname, lastname, age):
+    ''' Generate an email for the user '''
     return "{}{}_{}@racoondevs.com".format(firstname, lastname, age)
