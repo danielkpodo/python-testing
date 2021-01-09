@@ -17,4 +17,5 @@ def isEqual(a, b):
     return a == b
 
 
-print(isEqual(10, 90))
+def generate_user_email(firstname, lastname, age):
+    return "{}{}_{}@racoondevs.com".format(firstname, lastname, age)
